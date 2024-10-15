@@ -1,5 +1,5 @@
 import os
-from PIL import Image, ImageFilter
+from PIL import Image
 
 def rename_save_img(img: Image, name: str, path: str) -> None:
     img.save(path + "//" + name + ".jpg")
@@ -25,8 +25,8 @@ for i in range(len(file_names) // n_per_cat):
     image_num: list = [(i * 5), (i * 5) + 5] #Images [0,5)
     images: list = file_names[image_num[0]:image_num[1]]
     image_name: str = order_names[i]
-    for i,name in enumerate(images):
-        img_name: str = image_name + "_" + f"{i:02}"
+    for j,name in enumerate(images):
+        img_name: str = image_name + "_" + f"{j:02}"
         if _debug:
             print("Processing Image: " + img_name)
         img: Image = Image.open(image_dir + "//" + name)
