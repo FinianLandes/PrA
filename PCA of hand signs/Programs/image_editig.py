@@ -1,5 +1,5 @@
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 
 def rename_save_img(img: Image, name: str, path: str) -> None:
     img.save(path + "//" + name + ".jpg")
@@ -9,16 +9,18 @@ def rotate(img: Image, alpha: int) -> Image:
 def downscale(img: Image, resolution: int) -> Image:
     new_size: list = (resolution, resolution)
     return img.resize(new_size, Image.LANCZOS)
-def black_white(img) -> Image:
+def black_white(img: Image) -> Image:
     return img.convert('L')
+def mirror(img: Image) -> Image:
+    return ImageOps.mirror(img)
 
 _debug: bool = True
-image_dir: str = "PCA of hand signs//Images//3_O_P_C_Pi_HF_E_M_T_F_I"
-image_dest: str = "PCA of hand signs//Processed Images//Test"
+image_dir: str = "PCA of hand signs//Images//10_T_E_P_Pi_M_Remy"
+image_dest: str = "PCA of hand signs//Processed Images//Train"
 
-order_names: list = ["okay", "peace", "crossed", "pistol", "high_five", "easy", "metal", "thumbs_up", "fist", "index"]#Abbr. High Five: HF, Metal: M, Peace: P, Crossed: C, Pistol: Pi, Easy: E, Thumbs up: T, Fist: F, Index: I, Okay: O
-n_per_cat: int = 3
-replace: bool = True # if False checks whether name already exists, if it does it increments the number and adds the new image
+order_names: list = ["thumbs_up", "easy", "peace", "pistol","metal"]#Abbr. High Five: HF, Metal: M, Peace: P, Crossed: C, Pistol: Pi, Easy: E, Thumbs up: T, Fist: F, Index: I, Okay: O
+n_per_cat: int = 10
+replace: bool = False # if False checks whether name already exists, if it does it increments the number and adds the new image
 resolution: int = 256 #resulting image in format resolution x resolution
 file_names: list = sorted(os.listdir(image_dir))
 
