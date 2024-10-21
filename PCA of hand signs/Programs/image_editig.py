@@ -42,5 +42,4 @@ for i in range(len(file_names) // n_per_cat):
         if _debug:
             print(str((i * n_per_cat) + j + 1) + "/" + str(len(file_names)) +" Saved Image as: " + img_name)
         img = rename_save_img(img, img_name , image_dest)
-#hi:) 
 
