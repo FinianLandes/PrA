@@ -14,3 +14,4 @@ By Mailin Brandt and Finian Landes
 | 04.11.2024 | 4h | We continued working on K-means and fixed the NaN error, which was due to empty clusters due to bad initial points. Now we get a new error which lets the Algorithm stop after 2 iterations because the centroids do not continue further | |
 | 11.11.2024 | 1h30min | Continued with K-means, algorithm works but the points fed into it ar invalid. | Spend more time careful doing step after step |
 | 17.11.2024 | 2h | Refactored and Commented code. Created a Score function for k-means using sklearn as comparison the score there is equal to our k-means implementation -> Implementation is correct | |
+| 18.11.2024 | Extended our code to be able to save clusters. And tested some more inputs with their according accuracy. | |
