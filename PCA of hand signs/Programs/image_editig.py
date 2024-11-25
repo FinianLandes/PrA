@@ -1,16 +1,29 @@
 import os
 from PIL import Image, ImageOps
 
+#Saves an image with a provided name at a given location
 def rename_save_img(img: Image, name: str, path: str) -> None:
     img.save(path + "//" + name + ".jpg")
+
+#Rotates an image with a given angle
+#Returns the rotated image
 def rotate(img: Image, alpha: int) -> Image:
     img = img.rotate(angle=alpha)
     return img
+
+#Scales down the image to a given width and height, only works on square pictures (Warning shown with LANCZOS method is irrelevant)
+#Returns new image
 def downscale(img: Image, size: int) -> Image:
     new_size: list = (size, size)
     return img.resize(new_size, Image.LANCZOS)
+
+#Converts image to Grayscale
+#Returns new image
 def black_white(img: Image) -> Image:
     return img.convert('L')
+
+#Mirrors an image
+#Returns mirrored Image
 def mirror(img: Image) -> Image:
     return ImageOps.mirror(img)
 

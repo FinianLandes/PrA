@@ -15,4 +15,4 @@ By Mailin Brandt and Finian Landes
 | 11.11.2024 | 1h30min | Continued with K-means, algorithm works but the points fed into it ar invalid. | Spend more time careful doing step after step |
 | 17.11.2024 | 2h | Refactored and Commented code. Created a Score function for k-means using sklearn as comparison the score there is equal to our k-means implementation -> Implementation is correct | |
 | 18.11.2024 | Extended our code to be able to save clusters. And tested some more inputs with their according accuracy. | |
-| | | | |
+| 25.11.2024 | 4h |We started writing our Report, mainly the theory part and explanations of the algorithms. Also added some small parts to our code inorder to save images, which we want to add to our report.| |
