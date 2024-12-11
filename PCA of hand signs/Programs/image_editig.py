@@ -29,11 +29,11 @@ def mirror(img: Image) -> Image:
 
 _debug: bool = True
 image_dir: str = "PCA of hand signs//Images//10_T_E_P_Pi_M_Remy"
-image_dest: str = "PCA of hand signs//Processed Images//Train"
+image_dest: str = "PCA of hand signs//Processed Images//Test"
 
 order_names: list = ["thumbs_up", "easy", "peace", "pistol","metal"]#Abbr. High Five: HF, Metal: M, Peace: P, Crossed: C, Pistol: Pi, Easy: E, Thumbs up: T, Fist: F, Index: I, Okay: O
-n_per_cat: int = 10
-replace: bool = False # if False checks whether name already exists, if it does it increments the number and adds the new image
+n_per_cat: int = 10 #Images per category
+replace: bool = False #If False checks whether name already exists, if it does it increments the number and adds the new image
 size: int = 256 #resulting image in format size x size
 file_names: list = sorted(os.listdir(image_dir))
 
