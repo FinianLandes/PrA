@@ -20,13 +20,13 @@ By Mailin Brandt and Finian Landes
 ## Other Important Notes
 Folder Structure
 
-|-PCA of Hand Signs
-|  |-Processed Images
-|  |  |-Train
-|  |  |-Test
-|  |-Programs
-|  |  |-image_editing.py
-|  |  |-PCA.ipynb
+|-PCA of Hand Signs  
+|  |-Processed Images  
+|  |  |-Train  
+|  |  |-Test  
+|  |-Programs  
+|  |  |-image_editing.py  
+|  |  |-PCA.ipynb  
 |  |  |-PCA-K_Means.py
-|  |  |-K_Means.py
+|  |  |-K_Means.py  
 
