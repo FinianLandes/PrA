@@ -27,7 +27,8 @@ Folder Structure
 |   |-Programs  
 |   |   |-image_editing.py  
 |   |   |-PCA.ipynb  
-|   |   |-PCA-K_Means.py
+|   |   |-PCA-K_Means.ipynb
 |   |   |-K_Means.py  
 |   |-PA Mailin Brandt Finian Landes.docx  
+|   |-Work_Journal.ipynb
 </pre>
