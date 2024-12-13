@@ -19,7 +19,7 @@ By Mailin Brandt and Finian Landes
 
 ## Other Important Notes
 Folder Structure
-
+<pre>
 |-PCA of Hand Signs  
 |   |-Processed Images  
 |   |   |-Train  
@@ -29,4 +29,4 @@ Folder Structure
 |   |   |-PCA.ipynb  
 |   |   |-PCA-K_Means.py
 |   |   |-K_Means.py  
-
+</pre>
