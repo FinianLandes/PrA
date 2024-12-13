@@ -29,7 +29,4 @@ Folder Structure
 |  |  |-PCA.ipynb
 |  |  |-PCA-K_Means.py
 |  |  |-K_Means.py
-|
-|
-|
 
