@@ -9,6 +9,7 @@ def random_colors(k):
         if not (g > r * 1.2 and g > b * 1.2):
             colors.append((r, g, b))
     return np.array(colors) / 255.0
+
 def visualize(centroids, points, classification = [], k = 0, title = "") ->None:
     plt.title(title)
     if len(classification) == 0:
@@ -45,12 +46,14 @@ def k_means(points, centroids, k):
             new_centroids[i] = np.mean(clusters[i], axis = 0)
     #visualize(new_centroids, points, classification,k, title = "Moved Centoids")
     return classification, new_centroids
+
 def is_not_converged(last_centroids: np.ndarray, current_centroids: np.ndarray, e: float = 1e-20) -> bool:
     dist: float = 0
     for  i in range(len(last_centroids)):
         dist += np.sqrt(np.sum((last_centroids[i] - current_centroids[i]) ** 2))
     print(dist)
     return dist > e
+
 def outlying_distances(points: np.ndarray) -> list:
     mean_val: np.ndarray = np.mean(points, axis = 0)
     dist: list = [np.linalg.norm(point - mean_val) for point in points]
@@ -66,7 +69,9 @@ classification = []
 n_clusters = 1
 pos = [[n,n], [-n,n], [n,-n], [-n,-n]]
 
+#Ensures that the random numbers are the same every time the algorithm is run
 np.random.seed(2104013275)
+
 for i in range(n_clusters):
     clusters.append(np.random.randn(n_points_per_cl, 2) + np.array(pos[i]))
 points = np.vstack(clusters)
