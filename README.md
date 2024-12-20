@@ -29,6 +29,6 @@ Folder Structure
 |   |   |-PCA.ipynb  
 |   |   |-PCA-K_Means.ipynb
 |   |   |-K_Means.py  
-|   |-PA Mailin Brandt Finian Landes.docx  
+|   |-Mailin_Brandt_Finian_Landes_Recognition_of_Hand_Signs.pdf
 |   |-Work_Journal.ipynb
 </pre>
